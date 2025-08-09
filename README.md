@@ -46,6 +46,6 @@ If you’ve ever tried reading Twitch chat logs directly from a CSV file, you kn
 
 - Looks professional: Each PDF includes the streamer’s logo on the first page to make your archives look polished.
 
-- Easy to share and archive: PDFs are simple to open, search, and save — unlike bulky CSVs.
+- Easy to share and archive: PDFs are simple to open, search, and save, unlike bulky CSVs.
 
-In short, this tool makes Twitch chat logs easy to read, understand, and keep — no spreadsheet skills required.
+In short, this tool makes Twitch chat logs easy to read, understand, and keep, no spreadsheet skills required.
