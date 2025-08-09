@@ -79,7 +79,7 @@ pip install pandas fpdf2 Pillow requests python-dotenv pytz
 Wait for it to finish. It downloads and installs everything the script needs.
 
 5. Prepare your files
-Put the Twitch CSV chat export file (chat_messages.csv) and the Python script (TwitchChatExportPDF.py) into the same folder on your PC.
+Put the Twitch CSV chat export file (chat_messages.csv) and the Python script (Download TwitchChatExportPDF.py from this page) into the same folder on your PC.
 
 6. Run the Python script
 In Command Prompt, navigate to the folder where your files are saved. For example, if your files are in C:\Users\YourName\Downloads\TwitchChat, type:
