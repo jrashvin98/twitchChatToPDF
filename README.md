@@ -52,8 +52,9 @@ A black terminal window will open — this is where you will type commands.
 
 3. In the Command Prompt, type:
 
+```bash
 python --version
-
+```
 You should see something like:
 Python 3.x.x
 
