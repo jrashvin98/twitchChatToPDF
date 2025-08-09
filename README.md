@@ -74,7 +74,7 @@ Then try pip --version again.
 4. Install required packages
 Now, run this command in Command Prompt to install all necessary Python libraries used by the script:
 ```bash
-pip install pandas fpdf Pillow requests python-dotenv pytz
+pip install pandas fpdf2 Pillow requests python-dotenv pytz
 ```
 Wait for it to finish. It downloads and installs everything the script needs.
 
@@ -83,9 +83,9 @@ Put the Twitch CSV chat export file (chat_messages.csv) and the Python script (T
 
 6. Run the Python script
 In Command Prompt, navigate to the folder where your files are saved. For example, if your files are in C:\Users\YourName\Downloads\TwitchChat, type:
-
+```bash
 cd C:\Users\YourName\Downloads\TwitchChat
-
+```
 - Then run the script by typing:
 ```bash
 python TwitchChatExportPDF.py
