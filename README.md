@@ -59,20 +59,23 @@ You should see something like:
 Python 3.x.x
 
 Next, check pip (Python’s package installer) by typing:
+```bash
 pip --version
-
+```
 You should see something like:
 pip x.x.x from ...
 
 If you get an error, try typing:
+```bash
 python -m ensurepip --upgrade
+```
 Then try pip --version again.
 
 4. Install required packages
 Now, run this command in Command Prompt to install all necessary Python libraries used by the script:
-
+```bash
 pip install pandas fpdf Pillow requests python-dotenv pytz
-
+```
 Wait for it to finish. It downloads and installs everything the script needs.
 
 5. Prepare your files
@@ -84,9 +87,9 @@ In Command Prompt, navigate to the folder where your files are saved. For exampl
 cd C:\Users\YourName\Downloads\TwitchChat
 
 - Then run the script by typing:
-
+```bash
 python TwitchChatExportPDF.py
-
+```
 7. View your PDFs
 After it finishes, a new folder named Twitch Chat History will appear in that folder, containing your readable PDF files! Enjoy looking back at your early days of embarrassing Twitch messages 😂.
 
