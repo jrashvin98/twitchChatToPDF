@@ -36,6 +36,59 @@ Perfect for archiving, sharing, or just reliving your favourite moments.
 
 6. Enjoy looking back at your early days of embarrassing Twitch messages 😂.
 
+## Step 2 (Alternative) — Run the Python Script Yourself
+If you don’t want to run the EXE file, or if you want to see how the code works, you can run the Python script directly. This is great for users who want full control or are new to Python — we’ll walk you through the setup.
+
+1. Install Python (which includes pip)
+Go to the official Python website: https://www.python.org/downloads/windows/
+Click the Download Python 3.x.x button (choose the latest version 3.8 or above).
+Run the installer. Important: During installation, check the box that says “Add Python to PATH” before clicking Install.
+Wait for the installation to finish.
+
+2. Open Command Prompt
+Press Windows Key + R
+Type cmd and press Enter
+A black terminal window will open — this is where you will type commands.
+
+3. In the Command Prompt, type:
+
+python --version
+
+You should see something like:
+Python 3.x.x
+
+Next, check pip (Python’s package installer) by typing:
+pip --version
+
+You should see something like:
+pip x.x.x from ...
+
+If you get an error, try typing:
+python -m ensurepip --upgrade
+Then try pip --version again.
+
+4. Install required packages
+Now, run this command in Command Prompt to install all necessary Python libraries used by the script:
+
+pip install pandas fpdf Pillow requests python-dotenv pytz
+
+Wait for it to finish. It downloads and installs everything the script needs.
+
+5. Prepare your files
+Put the Twitch CSV chat export file (chat_messages.csv) and the Python script (TwitchChatExportPDF.py) into the same folder on your PC.
+
+6. Run the Python script
+In Command Prompt, navigate to the folder where your files are saved. For example, if your files are in C:\Users\YourName\Downloads\TwitchChat, type:
+
+cd C:\Users\YourName\Downloads\TwitchChat
+
+- Then run the script by typing:
+
+python TwitchChatExportPDF.py
+
+7. View your PDFs
+After it finishes, a new folder named Twitch Chat History will appear in that folder, containing your readable PDF files! Enjoy looking back at your early days of embarrassing Twitch messages 😂.
+
 ## Why do you need this program?
 
 If you’ve ever tried reading Twitch chat logs directly from a CSV file, you know it’s a mess. Long lines, confusing columns, and no easy way to find specific dates or messages. This program solves that by turning those raw CSV chat logs into clean, easy-to-read PDFs:
