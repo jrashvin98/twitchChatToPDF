@@ -29,12 +29,13 @@ Perfect for archiving, sharing, or just reliving your favourite moments.
 2. Create a new folder, and place both the CSV file Twitch provided and the EXE file you just downloaded into it.
 
 3. Run the TwitchChatExportPDF.exe file.
+- In case of emergency, you can press Ctrl + C to stop the program while its running.
 
 4. A new folder called **Twitch Chat History** will be created automatically.
 
 5. Inside the **Twitch Chat History** folder, you’ll find PDF files named after the various channels you’ve chatted in.
 
-6. Enjoy looking back at your early days of embarrassing Twitch messages 😂.
+6. Enjoy looking back at your early days of Twitch messages 😂.
 
 ## Step 2 (Alternative) — Run the Python Script Yourself
 If you don’t want to run the EXE file, or if you want to see how the code works, you can run the Python script directly. This is great for users who want full control or are new to Python — we’ll walk you through the setup.
@@ -91,7 +92,7 @@ cd C:\Users\YourName\Downloads\TwitchChat
 python TwitchChatExportPDF.py
 ```
 7. View your PDFs
-- After it finishes, a new folder named Twitch Chat History will appear in that folder, containing your readable PDF files! Enjoy looking back at your early days of embarrassing Twitch messages 😂.
+- After it finishes, a new folder named Twitch Chat History will appear in that folder, containing your readable PDF files! Enjoy looking back at your early days of Twitch messages 😂.
 
 ## Why do you need this program?
 
