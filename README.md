@@ -46,8 +46,8 @@ Run the installer. Important: During installation, check the box that says “Ad
 Wait for the installation to finish.
 
 2. Open Command Prompt
-Press Windows Key + R
-Type cmd and press Enter
+- Press Windows Key + R
+- Type cmd and press Enter
 A black terminal window will open — this is where you will type commands.
 
 3. In the Command Prompt, type:
@@ -72,17 +72,17 @@ python -m ensurepip --upgrade
 Then try pip --version again.
 
 4. Install required packages
-Now, run this command in Command Prompt to install all necessary Python libraries used by the script:
+- Now, run this command in Command Prompt to install all necessary Python libraries used by the script:
 ```bash
 pip install pandas fpdf2 Pillow requests python-dotenv pytz
 ```
 Wait for it to finish. It downloads and installs everything the script needs.
 
 5. Prepare your files
-Put the Twitch CSV chat export file (chat_messages.csv) and the Python script (Download TwitchChatExportPDF.py from this page) into the same folder on your PC.
+- Put the Twitch CSV chat export file (chat_messages.csv) and the Python script (Download TwitchChatExportPDF.py from this page) into the same folder on your PC.
 
 6. Run the Python script
-In Command Prompt, navigate to the folder where your files are saved. For example, if your files are in C:\Users\YourName\Downloads\TwitchChat, type:
+- In Command Prompt, navigate to the folder where your files are saved. For example, if your files are in C:\Users\YourName\Downloads\TwitchChat, type:
 ```bash
 cd C:\Users\YourName\Downloads\TwitchChat
 ```
@@ -91,7 +91,7 @@ cd C:\Users\YourName\Downloads\TwitchChat
 python TwitchChatExportPDF.py
 ```
 7. View your PDFs
-After it finishes, a new folder named Twitch Chat History will appear in that folder, containing your readable PDF files! Enjoy looking back at your early days of embarrassing Twitch messages 😂.
+- After it finishes, a new folder named Twitch Chat History will appear in that folder, containing your readable PDF files! Enjoy looking back at your early days of embarrassing Twitch messages 😂.
 
 ## Why do you need this program?
 
