@@ -5,6 +5,12 @@ Export CSV file downloaded from Twitch to readable PDF files
 Easily convert your exported Twitch chat logs (CSV format) into a neatly formatted PDF — all with one click!
 Perfect for archiving, sharing, or just reliving your favourite moments.
 
+## Why do you need this program?
+
+If you’ve ever tried reading Twitch chat logs directly from a CSV file, you know it’s a mess. Long lines, confusing columns, and no easy way to find specific dates or messages. This program solves that by turning those raw CSV chat logs into clean, easy-to-read PDFs:
+
+- No more messy spreadsheets: Chat messages are neatly organized by date with clickable links for quick navigation.
+
 ## Step 1 — Export Your Twitch Chat (CSV)
 
 1. Go to Twitch and open **Settings**.
@@ -114,12 +120,6 @@ python TwitchChatExportPDF.py
 ```
 7. View your PDFs
 - After it finishes, a new folder named Twitch Chat History will appear in that folder, containing your readable PDF files! Enjoy looking back at your early days of Twitch messages 😂.
-
-## Why do you need this program?
-
-If you’ve ever tried reading Twitch chat logs directly from a CSV file, you know it’s a mess. Long lines, confusing columns, and no easy way to find specific dates or messages. This program solves that by turning those raw CSV chat logs into clean, easy-to-read PDFs:
-
-- No more messy spreadsheets: Chat messages are neatly organized by date with clickable links for quick navigation.
 
 - Readable timestamps: All times are converted to local Malaysian/Singapore time so you know exactly when things happened.
 
