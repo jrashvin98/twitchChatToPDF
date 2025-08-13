@@ -2,7 +2,7 @@
 Export CSV file downloaded from Twitch to readable PDF files
 
 📖 Twitch Chat CSV to PDF
-Easily convert your exported Twitch chat logs (CSV format) into a neatly formatted PDF — all with one click! ⚡
+Easily convert your exported Twitch chat logs (CSV format) into a neatly formatted PDF — all with one click!
 Perfect for archiving, sharing, or just reliving your favourite moments.
 
 ## Step 1 — Export Your Twitch Chat (CSV)
