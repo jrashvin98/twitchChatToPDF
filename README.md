@@ -10,7 +10,7 @@ Perfect for archiving, sharing, or just reliving your favourite moments.
 If you’ve ever tried reading Twitch chat logs directly from a CSV file, you know it’s a mess. Long lines, confusing columns, and no easy way to find specific dates or messages. This program solves that by turning those raw CSV chat logs into clean, easy-to-read PDFs:
 
 - No more messy spreadsheets: Chat messages are neatly organized by date with clickable links for quick navigation.
-- Readable timestamps: ~All times are converted to local Malaysian/Singapore time so you know exactly when things happened.~
+- Readable timestamps: ~All times are converted to local Malaysian/Singapore time~ so you know exactly when things happened.
 - ~Looks professional: Each PDF includes the streamer’s logo on the first page to make your archives look polished.~
 - Easy to share and archive: PDFs are simple to open, search, and save, unlike bulky CSVs.
 
