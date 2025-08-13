@@ -37,7 +37,7 @@ In short, this tool makes Twitch chat logs easy to read, understand, and keep, n
 
 1. From this [page](<https://mega.nz/file/JbwmHCYL#rpr75A9rU8Sp2sYkvV9JPS6TPu4whVIIQFjTXJUVn2g>), download the TwitchChatExportPDF.exe file.
 
-2. Create a new folder, and place both the CSV file Twitch provided and the EXE file you just downloaded into it.
+2. Create a new folder, and place both the CSV file *(chat_messages.csv)* Twitch provided and the *TwitchChatExportPDF.exe* file you just downloaded into it.
 
 <img width="500" height="500" alt="Screenshot 2025-08-13 201814" src="https://github.com/user-attachments/assets/453562f8-2919-4e1e-9887-1a2087facfc4" />
 
