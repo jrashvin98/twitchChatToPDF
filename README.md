@@ -29,7 +29,7 @@ Perfect for archiving, sharing, or just reliving your favourite moments.
 2. Create a new folder, and place both the CSV file Twitch provided and the EXE file you just downloaded into it.
 
 3. Run the TwitchChatExportPDF.exe file.
-- In case of emergency, you can press Ctrl + C to stop the program while its running.
+ - 💡 Tip: In case of emergency, you can press Ctrl + C to stop the program while its running.
 
 4. A new folder called **Twitch Chat History** will be created automatically.
 
