@@ -28,7 +28,7 @@ Perfect for archiving, sharing, or just reliving your favourite moments.
 
 2. Create a new folder, and place both the CSV file Twitch provided and the EXE file you just downloaded into it.
 
-<img width="1902" height="783" alt="Screenshot 2025-08-13 201814" src="https://github.com/user-attachments/assets/453562f8-2919-4e1e-9887-1a2087facfc4" />
+<img width="500" height="500" alt="Screenshot 2025-08-13 201814" src="https://github.com/user-attachments/assets/453562f8-2919-4e1e-9887-1a2087facfc4" />
 
 
 
@@ -42,7 +42,7 @@ Perfect for archiving, sharing, or just reliving your favourite moments.
 
 
 
-   <img width="1875" height="759" alt="Screenshot 2025-08-13 201841" src="https://github.com/user-attachments/assets/4e3af097-c312-4680-869f-9d3a445eb8c4" />
+   <img width="500" height="500" alt="Screenshot 2025-08-13 201841" src="https://github.com/user-attachments/assets/4e3af097-c312-4680-869f-9d3a445eb8c4" />
 
 
 
@@ -51,7 +51,7 @@ Perfect for archiving, sharing, or just reliving your favourite moments.
 
 
 
-<img width="1570" height="725" alt="Screenshot 2025-08-13 202413" src="https://github.com/user-attachments/assets/6e9e67e1-6a20-44e0-9d3b-bafd072388f6" />
+<img width="500" height="500" alt="Screenshot 2025-08-13 202413" src="https://github.com/user-attachments/assets/6e9e67e1-6a20-44e0-9d3b-bafd072388f6" />
 
 
 5. Inside the **Twitch Chat History** folder, you’ll find PDF files named after the various channels you’ve chatted in.
