@@ -40,7 +40,7 @@ Perfect for archiving, sharing, or just reliving your favourite moments.
 If you don’t want to run the EXE file, or if you want to see how the code works, you can run the Python script directly. This is great for users who want full control or are new to Python — we’ll walk you through the setup.
 
 1. Install Python (which includes pip)
-Go to the official Python website: https://www.python.org/downloads/windows/
+- Go to the official Python website: https://www.python.org/downloads/windows/
 Click the Download Python 3.x.x button (choose the latest version 3.8 or above).
 Run the installer. Important: During installation, check the box that says “Add Python to PATH” before clicking Install.
 Wait for the installation to finish.
