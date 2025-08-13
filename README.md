@@ -126,10 +126,12 @@ python TwitchChatExportPDF.py
 7. View your PDFs
 - After it finishes, a new folder named Twitch Chat History will appear in that folder, containing your readable PDF files! Enjoy looking back at your early days of Twitch messages 😂.
 
-## Output
+## Example Output
 
+- Folder containing PDFs with all your chat messages for each channel you’ve interacted with
 <img width="500" height="500" alt="Screenshot 2025-08-13 at 11 37 14 PM" src="https://github.com/user-attachments/assets/ba652ec2-e436-4044-9f53-d977c8b12313" />
 
+- Each PDF has clickable date links for easy navigation through your chat history
 <img width="500" height="500" alt="Screenshot 2025-08-13 at 11 37 44 PM" src="https://github.com/user-attachments/assets/2f520b65-55e8-4689-9f59-98b7e4931136" />
 
 
