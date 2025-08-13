@@ -24,14 +24,23 @@ Perfect for archiving, sharing, or just reliving your favourite moments.
 
 ## Step 2 — Download the EXE File 💾
 
-1. From this [page](<https://www.dropbox.com/scl/fi/0apiddudqqa3bnac632k2/TwitchChatExportPDF.exe?rlkey=hwki310abu5rc6qou1x7r0olr&st=zgx6bcyi&dl=0>), download the TwitchChatExportPDF.exe file.
+1. From this [page](<https://mega.nz/file/JbwmHCYL#rpr75A9rU8Sp2sYkvV9JPS6TPu4whVIIQFjTXJUVn2g>), download the TwitchChatExportPDF.exe file.
 
 2. Create a new folder, and place both the CSV file Twitch provided and the EXE file you just downloaded into it.
+
+<img width="1902" height="783" alt="Screenshot 2025-08-13 201814" src="https://github.com/user-attachments/assets/453562f8-2919-4e1e-9887-1a2087facfc4" />
+
 
 3. Run the TwitchChatExportPDF.exe file.
  - 💡 Tip: In case of emergency, you can press Ctrl + C to stop the program while its running.
 
+   <img width="1875" height="759" alt="Screenshot 2025-08-13 201841" src="https://github.com/user-attachments/assets/4e3af097-c312-4680-869f-9d3a445eb8c4" />
+
+
 4. A new folder called **Twitch Chat History** will be created automatically.
+
+<img width="1570" height="725" alt="Screenshot 2025-08-13 202413" src="https://github.com/user-attachments/assets/6e9e67e1-6a20-44e0-9d3b-bafd072388f6" />
+
 
 5. Inside the **Twitch Chat History** folder, you’ll find PDF files named after the various channels you’ve chatted in.
 
