@@ -24,7 +24,7 @@ Perfect for archiving, sharing, or just reliving your favourite moments.
 
 ## Step 2 — Download the EXE File 💾
 
-1. From this [page](<https://mega.nz/file/JbwmHCYL#rpr75A9rU8Sp2sYkvV9JPS6TPu4whVIIQFjTXJUVn2g>), download the TwitchChatExportPDF.exe file.
+1. From this [page](<[https://mega.nz/file/JbwmHCYL#rpr75A9rU8Sp2sYkvV9JPS6TPu4whVIIQFjTXJUVn2g](https://www.dropbox.com/scl/fi/0apiddudqqa3bnac632k2/TwitchChatExportPDF.exe?rlkey=hwki310abu5rc6qou1x7r0olr&st=dk7kjz00&dl=0)>), download the TwitchChatExportPDF.exe file.
 
 2. Create a new folder, and place both the CSV file Twitch provided and the EXE file you just downloaded into it.
 
