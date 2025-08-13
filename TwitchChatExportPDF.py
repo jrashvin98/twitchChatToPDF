@@ -23,95 +23,98 @@ def convert_timestamp_to_local(timestamp, timezone='Asia/Kuala_Lumpur'):
         return timestamp
 
 # === MAIN SCRIPT ===
-
-csv_file = 'chat_messages.csv'
-
-if not os.path.exists(csv_file):
-    raise FileNotFoundError(f"CSV file '{csv_file}' not found in the current folder.")
-
-df = pd.read_csv(csv_file)
-
 try:
-    df['time'] = pd.to_datetime(df['time'], format='%Y-%m-%d %H:%M:%S', errors='coerce')
-    df = df.sort_values(by='time', ascending=True)
-except Exception as e:
-    print(f"Error sorting timestamps: {e}")
+    csv_file = 'chat_messages.csv'
 
-output_folder = "Twitch Chat History"
-os.makedirs(output_folder, exist_ok=True)
+    if not os.path.exists(csv_file):
+        raise FileNotFoundError(f"CSV file '{csv_file}' not found in the current folder.")
 
-for channel in df['channel'].dropna().unique():
-    channel_messages = df[df['channel'] == channel]
+    df = pd.read_csv(csv_file)
 
-    pdf = FPDF()
-    pdf.set_auto_page_break(auto=True, margin=15)
-    pdf.add_page()
-    pdf.set_font("helvetica", 'B', 16)
-    pdf.cell(0, 10, f"Messages from channel '{channel}'",
-             new_x=XPos.LMARGIN, new_y=YPos.NEXT, align='L')
-    pdf.ln(10)
+    try:
+        df['time'] = pd.to_datetime(df['time'], format='%Y-%m-%d %H:%M:%S', errors='coerce')
+        df = df.sort_values(by='time', ascending=True)
+    except Exception as e:
+        print(f"Error sorting timestamps: {e}")
 
-    pdf.set_font("helvetica", size=12)
-    pdf.cell(0, 10, "Date Index (click to jump)",
-             new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-    date_links = {}
-    unique_dates = sorted(channel_messages['time'].dropna().dt.date.unique())
+    output_folder = "Twitch Chat History"
+    os.makedirs(output_folder, exist_ok=True)
 
-    # Multi-row clickable date layout
-    link_per_row = 5
-    cell_width = pdf.w / link_per_row - 10
-    cell_height = 8
-    col_count = 0
+    for channel in df['channel'].dropna().unique():
+        channel_messages = df[df['channel'] == channel]
 
-    for date in unique_dates:
-        date_str = str(date)
-        link_id = pdf.add_link()
-        date_links[date_str] = link_id
-
-        pdf.set_text_color(0, 0, 255)  # blue link color
-        pdf.cell(cell_width, cell_height, date_str, border=1,
-                 new_x=XPos.RIGHT, new_y=YPos.TOP, align='C', link=link_id)
-
-        col_count += 1
-        if col_count >= link_per_row:
-            pdf.ln(cell_height)
-            col_count = 0
-
-    pdf.set_text_color(0, 0, 0)
-    pdf.ln(10)
-
-    # ===== PAGES FOR EACH DATE =====
-    for date in unique_dates:
-        date_str = str(date)
+        pdf = FPDF()
+        pdf.set_auto_page_break(auto=True, margin=15)
         pdf.add_page()
-        pdf.set_link(date_links[date_str])
-        pdf.set_font("helvetica", 'B', 14)
-        pdf.cell(0, 10, f"Messages on {date_str}",
-                 new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-        pdf.ln(5)
-
-        daily_msgs = channel_messages[channel_messages['time'].dt.date == date]
+        pdf.set_font("helvetica", 'B', 16)
+        pdf.cell(0, 10, f"Messages from channel '{channel}'",
+                 new_x=XPos.LMARGIN, new_y=YPos.NEXT, align='L')
+        pdf.ln(10)
 
         pdf.set_font("helvetica", size=12)
-        for index, row in daily_msgs.iterrows():
-            timestamp = row['time']
-            if pd.notnull(timestamp):
-                timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
-                timestamp = convert_timestamp_to_local(timestamp)
-            else:
-                timestamp = "Unknown Time"
+        pdf.cell(0, 10, "Date Index (click to jump)",
+                 new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+        date_links = {}
+        unique_dates = sorted(channel_messages['time'].dropna().dt.date.unique())
 
-            message = remove_non_ascii(row.get('body', ''))
-            pdf.multi_cell(0, 8, text=f"{timestamp}: {message}")
-            pdf.ln(1)
+        # Multi-row clickable date layout
+        link_per_row = 5
+        cell_width = pdf.w / link_per_row - 10
+        cell_height = 8
+        col_count = 0
 
-            if index % 100 == 0:
-                print(f"Exporting message {index + 1}/{len(daily_msgs)} for {date_str}...")
+        for date in unique_dates:
+            date_str = str(date)
+            link_id = pdf.add_link()
+            date_links[date_str] = link_id
 
-    # Save PDF
-    pdf_output_file = os.path.join(output_folder, f'{channel}_messages.pdf')
-    pdf.output(pdf_output_file)
+            pdf.set_text_color(0, 0, 255)  # blue link color
+            pdf.cell(cell_width, cell_height, date_str, border=1,
+                     new_x=XPos.RIGHT, new_y=YPos.TOP, align='C', link=link_id)
 
-    print(f"✅ Export completed for channel '{channel}'! Saved as '{pdf_output_file}'.")
+            col_count += 1
+            if col_count >= link_per_row:
+                pdf.ln(cell_height)
+                col_count = 0
 
-print("🎉 All channel PDFs have been exported successfully!")
+        pdf.set_text_color(0, 0, 0)
+        pdf.ln(10)
+
+        # ===== PAGES FOR EACH DATE =====
+        for date in unique_dates:
+            date_str = str(date)
+            pdf.add_page()
+            pdf.set_link(date_links[date_str])
+            pdf.set_font("helvetica", 'B', 14)
+            pdf.cell(0, 10, f"Messages on {date_str}",
+                     new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+            pdf.ln(5)
+
+            daily_msgs = channel_messages[channel_messages['time'].dt.date == date]
+
+            pdf.set_font("helvetica", size=12)
+            for index, row in daily_msgs.iterrows():
+                timestamp = row['time']
+                if pd.notnull(timestamp):
+                    timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
+                    timestamp = convert_timestamp_to_local(timestamp)
+                else:
+                    timestamp = "Unknown Time"
+
+                message = remove_non_ascii(row.get('body', ''))
+                pdf.multi_cell(0, 8, text=f"{timestamp}: {message}")
+                pdf.ln(1)
+
+                if index % 100 == 0:
+                    print(f"Exporting message {index + 1}/{len(daily_msgs)} for {date_str}...")
+
+        # Save PDF
+        pdf_output_file = os.path.join(output_folder, f'{channel}_messages.pdf')
+        pdf.output(pdf_output_file)
+
+        print(f"✅ Export completed for channel '{channel}'! Saved as '{pdf_output_file}'.")
+
+    print("🎉 All channel PDFs have been exported successfully!")
+
+except KeyboardInterrupt:
+    print("\n⛔ Process interrupted by user (Ctrl+C). Exiting safely...")
