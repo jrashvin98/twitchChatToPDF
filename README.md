@@ -129,7 +129,8 @@ python TwitchChatExportPDF.py
 ## Example Output
 
 - Folder containing PDFs with all your chat messages for each channel you’ve interacted with
-<img width="500" height="500" alt="Screenshot 2025-08-13 at 11 37 14 PM" src="https://github.com/user-attachments/assets/ba652ec2-e436-4044-9f53-d977c8b12313" />
+<img width="500" height="402" alt="image" src="https://github.com/user-attachments/assets/2f3f5ebb-10b1-44e9-acc0-97a4fbf32944" />
+
 
 - Each PDF has clickable date links for easy navigation through your chat history
 <img width="500" height="500" alt="Screenshot 2025-08-13 at 11 37 44 PM" src="https://github.com/user-attachments/assets/2f520b65-55e8-4689-9f59-98b7e4931136" />
